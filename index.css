@@ -1,0 +1,228 @@
+*{
+    border: 2px solid black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #212121;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* Flexbox for navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Flexbox for logo and title */
+.logo-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Logo image styling */
+.logo-title img {
+    width: 50px;
+    /* Adjust size to fit */
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Title styling */
+.logo-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation list */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation list items */
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #212121;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+section .welcome {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.welcome {
+    border: 2px solid;
+    border-radius: 10px;
+    margin: auto;
+    background-color: bisque;
+}
+
+.example {
+    background-color: rgb(107, 215, 215);
+}
+
+.example .child {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.example .child img {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.example .child h4 {
+    font-size: 20px;
+}
+
+/* section .benefits{
+    background-image: url(https://img.freepik.com/free-photo/workplace-with-blue-office-supplies_23-2147843328.jpg);
+} */
+
+section.benefits {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+section.benefits h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #212121;
+}
+
+/* Grid layout for benefits */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Benefit box styling */
+.benefit-box {
+    background-color: #212121;
+    color: white;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-box img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.benefit-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffab00;
+}
+
+.benefit-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f4f4f4;
+}
+
+/* Button style */
+.benefit-box a.btn {
+    background-color: #ffab00;
+    color: #212121;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.benefit-box a.btn:hover {
+    background-color: #ffc947;
+}
+
+footer {
+    background-color: #212121;
+    width: 100%;
+    color: white;
+}
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:50px) and (max-width:425px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+section .testmaker #head{
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+section .testmaker p{
+    width: 50%;
+}
+
+footer .testtrack{
+    width: 25%;
+}
+
+footer .testtrack ul{
+    list-style: none;
+}
+
+footer .testtrack li{
+    gap: 15px;
+}
