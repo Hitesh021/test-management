@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Logo image styling */
+.logo-title img {
+    width: 50px;
+    /* Adjust size to fit */
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Title styling */
+.logo-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation list items */
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #212121;
+}
+.switch-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .switch-link {
+        color: #007bff;
+        display: inline;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-size: 14px;
+    }
+
+    .switch-link:hover {
+        color: #0056b3;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    form button a{
+        text-decoration: none;
+        color: #f4f4f9;
+    }
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+}

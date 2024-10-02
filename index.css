@@ -1,20 +1,21 @@
-*{
+/* *{
     border: 2px solid black;
-}
+} */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    padding-top: 80px; /* Adjust this based on the height of your fixed nav */
 }
 
 header {
     background-color: #212121;
     color: white;
-    padding: 15px 20px;
 }
 
 /* Flexbox for navigation */
@@ -22,6 +23,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed; /* Fix the nav bar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #212121;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
 }
 
 /* Flexbox for logo and title */
@@ -34,9 +43,7 @@ nav {
 /* Logo image styling */
 .logo-title img {
     width: 50px;
-    /* Adjust size to fit */
     height: auto;
-    margin-left: 10px;
 }
 
 /* Title styling */
@@ -55,21 +62,24 @@ nav ul {
 }
 
 /* Navigation list items */
-nav ul li {
+nav ul li a{
     margin-left: 20px;
-}
-
-nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
+nav ul li a:hover{
+    box-shadow: rgb(255, 255, 255) 0px 1px 1px, rgb(255, 255, 255) 0px 2px 2px, rgb(255, 255, 255) 0px 4px 4px, rgba(255, 255, 255, 0.07) 0px 8px 8px, rgb(255, 255, 255) 0px 16px 16px;
+}
+
+/* Section Styling */
 section {
     padding: 20px;
     text-align: center;
 }
 
+/* Responsive Button */
 .btn {
     background-color: #212121;
     color: white;
@@ -77,12 +87,14 @@ section {
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-section .welcome {
-    text-align: center;
-    font-size: 45px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.btn:hover{
+    background-color: gray;
+    color: black;
+    font-size: 18px;
+    text-decoration: solid;
 }
 
 .welcome {
@@ -90,46 +102,36 @@ section .welcome {
     border-radius: 10px;
     margin: auto;
     background-color: bisque;
+    height: auto;
 }
 
-.example {
-    background-color: rgb(107, 215, 215);
+.welcome h1{
+    font-size: 45px;
 }
 
-.example .child {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+.example{
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-school-supplies-pattern-background_23-2150855728.jpg?size=626&ext=jpg&ga=GA1.1.1819120589.1727654400&semt=ais_hybrid);
+    background-size: cover;
 }
 
-.example .child img {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+.example .child{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 25px;
+    margin-top: 20px;
+    height: 50%;
 }
 
-.example .child h4 {
-    font-size: 20px;
+.example .child img{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    /* height: 50%; */
 }
 
-/* section .benefits{
-    background-image: url(https://img.freepik.com/free-photo/workplace-with-blue-office-supplies_23-2147843328.jpg);
-} */
-
-section.benefits {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
-}
-
-section.benefits h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #212121;
-}
-
-/* Grid layout for benefits */
+/* Responsive Benefits Grid */
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
     gap: 30px;
     margin-top: 20px;
 }
@@ -162,7 +164,6 @@ section.benefits h2 {
     color: #f4f4f4;
 }
 
-/* Button style */
 .benefit-box a.btn {
     background-color: #ffab00;
     color: #212121;
@@ -178,51 +179,98 @@ section.benefits h2 {
     background-color: #ffc947;
 }
 
+/* Footer */
 footer {
     background-color: #212121;
+    color: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ensures space between sections */
+    padding: 20px 0;
     width: 100%;
-    color: white;
 }
 
-@media screen and (min-width:425px) and (max-width:768px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media screen and (min-width:50px) and (max-width:425px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
-section .testmaker #head{
-    width: 50%;
+footer h3 {
     text-align: center;
-    font-size: 25px;
-    font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
-section .testmaker p{
-    width: 50%;
-}
-
-footer .testtrack{
-    width: 25%;
-}
-
-footer .testtrack ul{
+footer ul {
     list-style: none;
+    padding: 0;
+    line-height: 1.5;
 }
 
-footer .testtrack li{
-    gap: 15px;
+footer a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    nav{
+        height: 20%;
+    }
+    
+    nav ul {
+        flex-direction: row; 
+        text-align: center;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo-title h1 {
+        font-size: 20px; /* Smaller title size on mobile */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    .welcome {
+        font-size: 36px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr; /* Single-column grid on small screens */
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 425px) {
+    .welcome {
+        font-size: 28px; /* Even smaller welcome text */
+    }
+
+    .btn {
+        padding: 6px 12px; /* Reduce padding further for small devices */
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
 }
