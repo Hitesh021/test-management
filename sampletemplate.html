@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.jpg">
+    <title>Test Template with Timer and Question Status</title>
+    <link rel="stylesheet" href="./style/testtemplate.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title-timer">
+                <h1>G.K. Test</h1>
+                <div class="timer">
+                    Time Left: <span id="time">10:00</span>
+                </div>
+            </div>
+            <p class="test-info">Total Questions: 10 | Total Marks: 10</p>
+            <p>Please answer the following questions:</p>
+        </header>
+
+        <form action="#">
+
+            <!-- Question 1 -->
+            <div class="question" id="question-1">
+                <h3>1. What is the capital of France?</h3>
+                <label><input type="radio" name="q1" value="a"> A. Paris</label><br>
+                <label><input type="radio" name="q1" value="b"> B. London</label><br>
+                <label><input type="radio" name="q1" value="c"> C. Rome</label><br>
+                <label><input type="radio" name="q1" value="d"> D. Berlin</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question" id="question-2">
+                <h3>2. Which planet is known as the Red Planet?</h3>
+                <label><input type="radio" name="q2" value="a"> A. Earth</label><br>
+                <label><input type="radio" name="q2" value="b"> B. Mars</label><br>
+                <label><input type="radio" name="q2" value="c"> C. Venus</label><br>
+                <label><input type="radio" name="q2" value="d"> D. Jupiter</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question" id="question-3">
+                <h3>3. What is the chemical symbol for water?</h3>
+                <label><input type="radio" name="q3" value="a"> A. O2</label><br>
+                <label><input type="radio" name="q3" value="b"> B. H2</label><br>
+                <label><input type="radio" name="q3" value="c"> H2O</label><br>
+                <label><input type="radio" name="q3" value="d"> CO2</label>
+            </div>
+
+            <!-- Question 4 to 10 -->
+            <!-- Repeat similar structure for remaining questions -->
+            <div class="question" id="question-4">
+                <h3>4. What is the capital of Japan?</h3>
+                <label><input type="radio" name="q4" value="a"> A. Tokyo</label><br>
+                <label><input type="radio" name="q4" value="b"> B. Kyoto</label><br>
+                <label><input type="radio" name="q4" value="c"> C. Osaka</label><br>
+                <label><input type="radio" name="q4" value="d"> D. Nagoya</label>
+            </div>
+
+            <div class="question" id="question-5">
+                <h3>5. What is the powerhouse of the cell?</h3>
+                <label><input type="radio" name="q5" value="a"> A. Nucleus</label><br>
+                <label><input type="radio" name="q5" value="b"> B. Ribosome</label><br>
+                <label><input type="radio" name="q5" value="c"> C. Mitochondria</label><br>
+                <label><input type="radio" name="q5" value="d"> D. Golgi apparatus</label>
+            </div>
+
+            <div class="question" id="question-6">
+                <h3>6. What is the largest ocean on Earth?</h3>
+                <label><input type="radio" name="q6" value="a"> A. Atlantic Ocean</label><br>
+                <label><input type="radio" name="q6" value="b"> B. Indian Ocean</label><br>
+                <label><input type="radio" name="q6" value="c"> C. Pacific Ocean</label><br>
+                <label><input type="radio" name="q6" value="d"> D. Arctic Ocean</label>
+            </div>
+
+            <div class="question" id="question-7">
+                <h3>7. Who wrote 'Hamlet'?</h3>
+                <label><input type="radio" name="q7" value="a"> A. William Shakespeare</label><br>
+                <label><input type="radio" name="q7" value="b"> B. Charles Dickens</label><br>
+                <label><input type="radio" name="q7" value="c"> C. Mark Twain</label><br>
+                <label><input type="radio" name="q7" value="d"> D. J.K. Rowling</label>
+            </div>
+
+            <div class="question" id="question-8">
+                <h3>8. What is the boiling point of water?</h3>
+                <label><input type="radio" name="q8" value="a"> A. 0°C</label><br>
+                <label><input type="radio" name="q8" value="b"> B. 50°C</label><br>
+                <label><input type="radio" name="q8" value="c"> C. 100°C</label><br>
+                <label><input type="radio" name="q8" value="d"> D. 150°C</label>
+            </div>
+
+            <div class="question" id="question-9">
+                <h3>9. Who developed the theory of relativity?</h3>
+                <label><input type="radio" name="q9" value="a"> A. Isaac Newton</label><br>
+                <label><input type="radio" name="q9" value="b"> B. Albert Einstein</label><br>
+                <label><input type="radio" name="q9" value="c"> C. Galileo Galilei</label><br>
+                <label><input type="radio" name="q9" value="d"> D. Marie Curie</label>
+            </div>
+
+            <div class="question" id="question-10">
+                <h3>10. What is the currency of the United Kingdom?</h3>
+                <label><input type="radio" name="q10" value="a"> A. Euro</label><br>
+                <label><input type="radio" name="q10" value="b"> B. Dollar</label><br>
+                <label><input type="radio" name="q10" value="c"> C. Pound Sterling</label><br>
+                <label><input type="radio" name="q10" value="d"> D. Yen</label>
+            </div>
+
+            <button type="submit"><a href="./home.html">Submit</a></button>
+        </form>
+    </div>
+
+    <div class="question-status">
+        <h3>Question Status</h3>
+        <ul>
+            <li><a href="#question-1">Question 1</a></li>
+            <li><a href="#question-2">Question 2</a></li>
+            <li><a href="#question-3">Question 3</a></li>
+            <li><a href="#question-4">Question 4</a></li>
+            <li><a href="#question-5">Question 5</a></li>
+            <li><a href="#question-6">Question 6</a></li>
+            <li><a href="#question-7">Question 7</a></li>
+            <li><a href="#question-8">Question 8</a></li>
+            <li><a href="#question-9">Question 9</a></li>
+            <li><a href="#question-10">Question 10</a></li>
+        </ul>
+    </div>
+</body>
+</html>
